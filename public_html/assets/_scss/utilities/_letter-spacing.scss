@@ -1,0 +1,23 @@
+$letter-spacing: () !default;
+$letter-spacing: map-merge(
+    (
+        '1': 1px,
+        '2': 2px,
+        '3': 3px,
+        '4': 4px,
+        '5': 5px,
+    ),
+    $letter-spacing
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $value in $letter-spacing {
+            .letter-spacing#{$infix}-#{$key} {
+                letter-spacing: $value !important;
+            }
+        }
+    }
+}

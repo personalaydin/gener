@@ -1,0 +1,24 @@
+.ribbon {
+    position: absolute;
+    z-index: 1;
+}
+
+.ribbon--fixed {
+    position: fixed;
+}
+
+.ribbon--news {
+    top: 90%;
+    right: 0;
+    width: 180px;
+
+    .button {
+        border: 0;
+    }
+}
+
+.ribbon--gallery {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}

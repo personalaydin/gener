@@ -1,0 +1,68 @@
+.scroll-icon {
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: 2px solid $colorMainRed;
+    border-radius: 1em;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 40px;
+        width: 1px;
+        background: $colorMainRed;
+        border-radius: .4em;
+    }
+}
+
+.scroll-icon__wheel-outer {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: .3em;
+    transform: translateX(-50%);
+    height: 1rem;
+    width: 2px;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: $colorMainRed;
+    animation: scroll_line 2.75s ease-in-out infinite;
+}
+
+.scroll-icon__down {
+
+    svg {
+        fill: $colorMainRed;
+        width: 14px;
+        height: 8px;
+    }
+}
+
+@keyframes scroll_line {
+    0%   {
+        transform: translateY(0);
+    }
+    25%  {
+        transform: translateY(-0.6em);
+    }
+    50%  {
+        transform: translateY(0);
+    }
+    75%  {
+        transform: translateY(0.6em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

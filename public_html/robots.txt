@@ -1,0 +1,4 @@
+User-agent: *
+Allow
+
+Sitemap: https://gener.com.tr/sitemap.xml 

@@ -1,0 +1,1 @@
+<a href="javascript:void(0);" class="ribbon ribbon--news h-sweep-to-right h-button h-button__main bg-main d-none d-lg-flex justify-content-start font-weight-700 font-size-lg-26 font-size-xl-30 pl-3">news</a>

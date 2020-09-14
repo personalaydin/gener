@@ -1,0 +1,36 @@
+.form-control {
+    position: relative;
+    color: $colorMain;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: $colorMain;
+
+    @extend .font-weight-600;
+
+    &:focus {
+        box-shadow: none;
+        color: inherit;
+        border-color: $colorMainRed;
+    }
+
+    @include placeholder() {
+        color: $colorMain;
+    }
+}
+
+textarea {
+    resize: none !important;
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.is-invalid {
+
+    @include placeholder() {
+        color: theme-color("danger");
+    }
+}

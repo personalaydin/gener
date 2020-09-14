@@ -1,0 +1,36 @@
+$font-weights: () !default;
+$font-weights: map-merge(
+    (
+        '100': 100,
+        '200': 200,
+        '300': 300,
+        '400': 400,
+        '500': 500,
+        '600': 600,
+        '700': 700,
+        '800': 800,
+        '900': 900,
+    ),
+    $font-weights
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $value in $font-weights {
+            .font-weight#{$infix}-#{$key} {
+                font-weight: $value !important;
+            }
+        }
+    }
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+// Strong tag override
+strong {
+    @extend .font-weight-700;
+}

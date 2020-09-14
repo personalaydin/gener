@@ -1,0 +1,96 @@
+:root {
+    --vh: 1vh;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: block !important;
+    font-family: $fontFamilyMain;
+    background: #fff;
+}
+
+button {
+
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+::selection {
+    background: $colorMainRed;
+    color: $colorWhite;
+}
+
+.background-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+label {
+    font-weight: 600;
+    color: #000;
+}
+
+// Animate
+.animate--fadeIn {
+    opacity: 0;
+}
+
+.minimum-full-height {
+    min-height: calc(var(--vh) * 100);
+}
+
+// IE Fix
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ie-full-height {
+        height: 100vh;
+    }
+}
+
+.transition {
+
+    &-all-3 {
+        transition: all .3s;
+    }
+}
+
+// Hover Style Class
+.hover {
+
+    &-main {
+
+        &:hover {
+            color: $colorMain;
+        }
+    }
+
+    &-main-red {
+
+        &:hover {
+            color: $colorMainRed;
+        }
+    }
+
+    &-main-dark-blue {
+
+        &:hover {
+            color: $colorMainDarkBlue;
+        }
+    }
+
+    &-light-blue {
+
+        &:hover {
+            color: $colorLightBlue;
+        }
+    }
+}
+
+.text-color-red{
+    color: #c30f1a !important;
+}

@@ -1,0 +1,35 @@
+.vertical-divider {}
+
+.vertical-divider__main-red {
+    width: 4px;
+    height: 60px;
+    background: $colorMainRed;
+
+    &--explore {
+        height: 35px;
+    }
+
+    &--in {
+        height: 45px;
+    }
+
+    &--gallery {
+        width: 5px;
+        height: 50px;
+    }
+
+    &--download-pdf {
+        width: 5px;
+        height: 48px;
+    }
+}
+
+.vertical-divider__social-icon {
+    width: 1px;
+    height: 45px;
+    background: $colorMain;
+
+    &--bg-red {
+        background: $colorMainRed;
+    }
+}

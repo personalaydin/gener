@@ -1,0 +1,166 @@
+$fontFamilyMain: 'Exo', sans-serif;
+$colorMain: #5f8aa5;
+$colorMainRed: #c30f1a;
+$colorMainDarkBlue: #31435d;
+$colorLightBlue: #b1c1cb;
+$colorAquaBlue: #eff4f7;
+$colorBlue500: #e6f4f1;
+$colorGray: #efefef;
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorDarkRed: #e13438;
+
+// Lightgallery
+$lg-path-fonts: '../../../node_modules/lightgallery/src/fonts';
+$lg-path-images: '../../../node_modules/lightgallery/src/img';
+
+// Bootstrap
+$body-color: $colorMain;
+
+$headings-font-weight: 'inherit';
+
+$input-btn-padding-y: .9rem;
+
+$theme-colors: (
+    'main': $colorMain,
+    'main-red': $colorMainRed,
+    'main-dark-blue': $colorMainDarkBlue,
+    'light-blue': $colorLightBlue,
+    'aqua-blue': $colorAquaBlue,
+    'blue500': $colorBlue500,
+    'gray': $colorGray,
+    'black': $colorBlack,
+    'white': $colorWhite,
+);
+
+
+$spacer: 1rem;
+$spacers: (
+    n30: -($spacer * 3),
+    0: 0,
+    1: ($spacer * 0.25),
+    2: ($spacer * 0.5),
+    // 2\.5: ($spacer * 0.625),
+    3: ($spacer * 0.75),
+    4: ($spacer * 1),
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.5),
+    7: ($spacer * 1.75),
+    8: ($spacer * 2),
+    9: ($spacer * 2.25),
+    10: ($spacer * 2.5),
+    11: ($spacer * 2.75),
+    12: ($spacer * 3),
+    13: ($spacer * 3.25),
+    14: ($spacer * 3.5),
+    15: ($spacer * 3.75),
+    16: ($spacer * 4),
+    18: ($spacer * 4.5),
+    20: ($spacer * 5),
+    22: ($spacer * 5.5),
+    24: ($spacer * 6),
+    28: ($spacer * 7),
+    30: ($spacer * 7.5),
+    32: ($spacer * 8),
+    34: ($spacer * 8.5),
+    35: ($spacer * 8.75),
+    36: ($spacer * 9),
+    40: ($spacer * 10),
+    50: ($spacer * 12),
+    60: ($spacer * 14),
+);
+
+$sizes: (
+    150: 150%,
+);
+
+$grid-columns: 48;
+$grid-gutter-width: 20px;
+
+$input-border-radius: 0;
+$input-border-color: #efeef6;
+$input-btn-focus-width: .05rem;
+$input-btn-focus-color: $colorMain;
+$component-active-bg: $colorMain;
+$form-feedback-font-size: 90%;
+
+// 1900px instead of 1920px and 1350px instead of 1366px
+// because some browsers report width as 1905px
+// if scrollbar is visible (I'm looking at you Safari)
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1300px,
+    xxxl: 1550px,
+    xxxxl: 1700px
+);
+
+// Header Height
+$header-height: (
+    xs: 70px,
+    lg: 126px,
+);
+
+// Footer Offset
+$footer-offset: 5rem;
+
+// Wrapper
+$wrapper-offset: (
+    xs: 20px,
+    sm: 35px,
+    md: 30px,
+    lg: 40px,
+    xl: 70px,
+    xxl: 80px,
+    xxxl: 90px,
+    xxxxl: 100px,
+);
+
+// Play Icon
+$play-size: (
+    xs: 90px,
+    lg: 250px,
+);
+
+$input-font-size: .85rem;
+$label-margin-bottom: 0;
+
+// jonsuh/hamburgers
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-color: $colorMain;
+$hamburger-types: (
+        spin
+);
+
+$activeColor: $colorMainRed !default;
+$nameSpace: 'h' !default;
+
+// Bootstrap invalid-feedback font size variable
+$form-feedback-font-size: 13px;
+
+
+
+
+
+.text-color-dark-blue {
+    color: $colorMainDarkBlue;
+}
+
+
+.text-color-main {
+    color: $colorMain;
+}
+
+
+.text-color-white {
+    color: $colorWhite;
+}
+
+

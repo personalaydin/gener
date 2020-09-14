@@ -1,0 +1,59 @@
+:root {
+    --headerHeight: #{map_get($header-height, xs)};
+
+    @include media-breakpoint-up(lg) {
+        --headerHeight: #{map_get($header-height, lg)};
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--headerHeight);
+    z-index: 10;
+}
+
+.header__overflow {
+    height: var(--headerHeight);
+}
+
+.header--shrink {
+    background: rgba(#fff, .8);
+}
+
+.header__logo {
+
+    svg {
+        width: 100px;
+        height: 35px;
+        transform:scale(1.6);
+
+        @include media-breakpoint-up(md) {
+            width: 150px;
+            height: 38px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 200px;
+            height: 46px;
+            transform: scale(1.3);
+        }
+    }
+}
+
+.header__menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.header__lang-switcher {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: $colorMain;
+    background: $colorAquaBlue;
+}

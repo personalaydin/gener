@@ -1,0 +1,174 @@
+:root {
+    --wrapperOffset: #{map_get($wrapper-offset, xs)};
+    --headerHeight: #{map_get($header-height, xs)};
+
+    @include media-breakpoint-up(sm) {
+        --wrapperOffset: #{map_get($wrapper-offset, sm)};
+    }
+
+    @include media-breakpoint-up(md) {
+        --wrapperOffset: #{map_get($wrapper-offset, md)};
+    }
+
+    @include media-breakpoint-up(lg) {
+        --wrapperOffset: #{map_get($wrapper-offset, lg)};
+        --headerHeight: #{map_get($header-height, lg)};
+    }
+
+    @include media-breakpoint-up(lg) {
+        --headerHeight: #{map_get($header-height, lg)};
+    }
+
+    @include media-breakpoint-up(xl) {
+        --wrapperOffset: #{map_get($wrapper-offset, xl)};
+    }
+
+    @include media-breakpoint-up(xxl) {
+        --wrapperOffset: #{map_get($wrapper-offset, xxl)};
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        --wrapperOffset: #{map_get($wrapper-offset, xxxl)};
+    }
+
+    @include media-breakpoint-up(xxxxl) {
+        --wrapperOffset: #{map_get($wrapper-offset, xxxxl)};
+    }
+}
+
+.main-slider {
+    height: calc(90vh - var(--headerHeight));
+
+    @include media-breakpoint-down(sm) {
+        height: calc(90vh - var(--headerHeight));
+    }
+
+    @include media-breakpoint-up(md) {
+        height: calc(60vh - var(--headerHeight));
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: calc(100vh - var(--headerHeight));
+    }
+}
+
+.main-slider__item--1 {
+    
+    @include media-breakpoint-up(lg) {
+        background-image: url('../../img/slider/1.png');
+        background-position: top;
+        background-size: contain;
+        margin-top: 50px;
+    }
+  
+}
+
+.main-slider__item--2 {
+
+    background-image: url('../../img/slider/stationary-banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+    background-position: center;
+        @include media-breakpoint-down(md) {
+            background-image: url('../../img/slider/stationary.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-origin: content-box;
+            background-position: center;
+            transform: scale(.7) translateX(110px) !important;
+    } 
+}
+
+.main-slider__item--3 {
+    background-image: url('../../img/slider/portable-detail.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // margin-top: 50px;
+    background-position: 100% 100%;
+    // transform: scale(1.0) translateY(-125px);
+        @include media-breakpoint-up(lg) {
+        }
+    }
+
+.main-slider__item--4 {
+        background-image: url('../../img/slider/laydown-detail.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // margin-top: 50px;
+        background-position: 50% 50%;
+            @include media-breakpoint-down(md) {
+                background-image: url('../../img/slider/lay-down-mobil.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                // margin-top: 50px;
+                background-position: 15% 50%;
+        }
+    }
+
+
+
+.main-slider__item__button {
+    position: relative;
+    color: $colorMainDarkBlue;
+    transition: color .3s;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -16px;
+        transform: translateY(-50%);
+        height: 30px;
+        width: 2px;
+        background: $colorMainRed;
+        transition: width .3s;
+        z-index: -1;
+
+        @include media-breakpoint-up(lg) {
+            height: 40px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+
+        &:hover {
+            color: $colorWhite;
+
+            &:before {
+                width: 110px;
+            }
+        }
+    }
+}
+
+.main-slider__custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .custom-slick-next {
+        position: absolute;
+        right: var(--wrapperOffset);
+        background: transparent;
+    }
+
+    .custom-slick-prev {
+        position: absolute;
+        left: var(--wrapperOffset);
+        background: transparent;
+
+        .main-slider__custom-number {
+            position: absolute;
+            right: 10px;
+            top: 30px;
+        }
+    }
+}
+
+.slider-mobile-text-width{
+    @include media-breakpoint-down(sm) {
+        width: 75vw !important;
+    }
+}

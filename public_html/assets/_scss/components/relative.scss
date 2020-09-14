@@ -1,0 +1,565 @@
+.relative-top-20{
+top:20%
+}
+
+.cabintop{
+    position:relative;
+    top:10px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .cabintop {
+       position:relative!important;
+    top:245px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+ .portable-pad{
+    position:relative!important;
+    top:270px!important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+ .portable-pad-2{
+    position:relative!important;
+    top:240px !important;
+}
+}
+.right-item{
+    right:10%!important;
+}
+
+.hover-mega-menu{
+position: relative;
+z-index: 1;
+width: 800px;
+height: 960px;
+background-color:#e3ecf1;
+transition: 0.01s ease;
+bottom:0px;
+  @include media-breakpoint-down(sm) {
+    height: 500px;
+  }
+}
+
+// .hover-mega-menu a:before {
+//   content:"";
+// position:absolute;
+// left:0;
+// top:0;
+// width:100%;
+// height:100%;
+// background:rgba(195, 52, 52, 1);
+// background-blend-mode: multiply;
+
+
+
+// z-index: 2;
+// opacity: 0;
+
+
+
+// }
+
+.hover-mega-menu{
+  a{
+    &:hover{     
+      &:before{ 
+        opacity:1;
+        }
+    }
+  }
+}
+
+.text{
+  opacity: 0.9;
+  transition: .6s ease;
+}
+
+text:hover{
+  color:#fff;
+  background-color: rgba(195, 52, 52, 0.938);
+  opacity: 1;
+}
+.overlay-center{
+    margin-left: 10%;
+    margin-top: 3%;
+    border-left: 2px solid #be3638;
+
+    @include media-breakpoint-down(sm) {
+      left: 0%;
+      margin-top: 20%;
+  } 
+}
+
+
+.center-image{
+  position: relative;
+    top: 80px;
+    left: 27%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(sm) {
+      left: 0%;
+  }
+}
+
+.stationary-image{
+  position: relative;
+    left: 13%
+}
+
+
+.slide-banner{
+  position: relative;
+  top: -17%;
+  left:40%;
+}
+
+.content-solution{
+    @include media-breakpoint-up(sm) {
+      position: relative;
+    left: 50%;
+    top: 100px;
+    }
+}
+
+.stationary-image-wild-machines{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  right: 110px;
+  @include media-breakpoint-down(lg) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 70px !important;
+ 
+  }
+}
+
+.portable-image-wild-machines{
+  margin-left: 30px;
+  @include media-breakpoint-down(sm) {
+    margin-left: 20px;
+  }
+}
+
+.mega-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+
+}
+
+
+.portable-margin{
+  
+  @include media-breakpoint-up(xxl){
+    margin-top:105px !important;
+  }
+  margin-top:95px;
+  
+  @include media-breakpoint-down(lg){
+    margin-top:50px !important;
+  }
+  @include media-breakpoint-down(md){
+    margin-top:70px !important;
+  }
+}
+
+
+.wind-machine-slider-item-desktop{
+  @include media-breakpoint-down(md) {
+    display:none;
+  }
+}
+
+.wind-machine-slider-item-mobile{
+  @include media-breakpoint-up(sm) {
+    display:none;
+  }
+}
+
+
+.wind-machine-slider-back-button{
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 40px;
+    margin-top: -150px;
+  }
+}
+
+
+.ml100{
+  margin-left:-150px !important;
+  @include media-breakpoint-down(md) {
+    margin-left:-130px !important;
+  }
+}
+.mt105{
+  @include media-breakpoint-up(md) {
+    margin-top:105px !important;
+  }
+  @include media-breakpoint-down(md) {
+    margin-top:70px !important;
+  }
+}
+
+
+.ml40{
+  margin-left:40px !important;
+  @include media-breakpoint-down(md) {
+    margin-left:0 !important;
+  }
+}
+
+.text-align-left{
+  text-align:left;
+}
+
+.wind-machine-portable-img-holder{
+    width: 322px;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.marge1{
+  @include media-breakpoint-down(md) {
+    width: 300px !important;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 40px;
+}
+      
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff !important;
+    background-color: #a41e29 !important;
+    border-radius: 0 !important;
+    width: 29vw;
+    & .arrow-icon{
+    width: 22px !important;
+    height: 23px;
+    background-image: url(../../img/icons/arrow-down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
+.nav-pills .nav-link {
+    background-color: #ecf4f7 !important;
+    color: #c5d5d9 !important;
+    border-radius: 0 !important;
+    width: 29vw;
+     & .arrow-icon{
+      width: 22px !important;
+      height: 23px;
+      background-image: url(../../img/icons/arrow-up.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: unset !important;
+  }
+}
+
+.mobile-banner-image{
+  @include media-breakpoint-down(sm) {
+    transform: scale(1.3) translateX(-20px);
+    }
+}
+
+.content-margin{
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 6%;
+}
+.pos-relative{
+  position: relative;
+  
+}
+.left-hor{
+  left:100%;
+}
+
+.remote-cntrl{
+  position: relative;
+    right: 0 !important;
+    bottom: 25px !important;
+    left: 205px !important;
+    margin-right: auto !important;
+   
+    @media screen and (min-width:1600px){
+      position: relative;
+      bottom: 30px !important;
+      left: 330px !important;
+      margin-right: auto !important;
+      display: block !important;
+    }
+    @media screen and (max-width:992px){
+      position: relative;
+      bottom: 50px !important;
+      left: 210px !important;
+      margin-right: auto !important;
+      display: block !important;
+    }
+    @media screen and (max-width:767px){
+      position: relative;
+      bottom: 50px !important;
+      left: 200px !important;
+      margin-right: auto !important;
+      display: block !important;
+      }
+    
+}
+
+
+.pos-absolute{
+position: relative;
+bottom: 20px !important;
+left: 145px !important;
+margin-right: auto !important;
+display: block !important;
+
+
+@media screen and (min-width:1600px){
+  position: relative;
+  bottom: 20px !important;
+  left: 250px !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+@media screen and (max-width:992px){
+  position: relative;
+  bottom: 20px !important;
+  left: 130px !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+@media screen and (max-width:767px){
+  position: relative;
+  bottom: 30px !important;
+  left: 140px !important;
+  margin-right: auto !important;
+  display: block !important;
+  }
+}
+
+.tower-pos-absolute{
+position: absolute;
+bottom: 15px;
+left: 85px;
+margin-right: auto !important;
+display: block !important;
+
+@media screen and (min-width:1600px){
+  position: absolute;
+  bottom: 20px !important;
+  left: 120px !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+@media screen and (max-width:992px){
+  position: absolute;
+  bottom: 15px !important;
+  left: 90px !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+@media screen and (max-width:767px){
+  position: absolute;
+  bottom: 15px !important;
+  left: 80px !important;
+  margin-right: auto !important;
+  display: block !important;
+  }
+}
+
+
+.items-centering{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+
+
+.propeller-mobil-item-center{
+  @include media-breakpoint-down(sm) {
+    position: absolute !important;
+    z-index: 1;
+    bottom: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 75vw !important;
+}
+  @include media-breakpoint-down(md) {
+    width: 550px;
+  }
+
+
+
+
+}
+
+.propeller-mobil-item-2-center{
+  @include media-breakpoint-down(sm) {
+    position: absolute !important;
+    bottom: 300px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 75vw !important;
+  }
+  @include media-breakpoint-down(md) {
+    width: 550px;
+  }
+
+}
+
+.propeller-mobil-item-3-center{
+  
+  @include media-breakpoint-down(sm) {
+    position: absolute !important;
+    bottom: 420px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 75vw !important;
+}
+  @include media-breakpoint-up(md) {
+    // position: absolute !important;
+    // bottom: 420px;
+    // z-index: 99999;
+    // left:25%; 
+    width: 550px;
+  }
+}
+.propeller-mobil-item-4-center{
+  @include media-breakpoint-down(sm) {
+    position: absolute !important;
+    bottom: 50px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 75vw !important;
+}
+  
+  @include media-breakpoint-up(md) {
+    // position: absolute !important;
+    // bottom: 70px;
+    // z-index: 999;
+    width: 550px;
+    
+  }
+}
+
+.mobile-slide-banner{
+  @include media-breakpoint-down(sm) {
+   background-position: center !important;
+}
+
+}
+
+.button-fix{
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    bottom: 19%;
+    right: 20%;
+}
+}
+
+.mobil-image-center{
+  @include media-breakpoint-up(lg) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 55px;
+    position: relative;
+}
+  @include media-breakpoint-down(md) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 40px;
+    position: relative;}
+  @include media-breakpoint-down(sm) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 55px;
+    position: relative;
+}
+}
+
+.portable-center{
+  @include media-breakpoint-down(md) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 15px;
+    position: relative;
+}
+  @include media-breakpoint-down(sm) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 0px;
+    position: relative;
+}
+
+}
+.portable-text-center{
+  @include media-breakpoint-down(md) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    left: 90px !important;
+    position: relative !important;
+}
+  @include media-breakpoint-down(sm) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    left: 20px !important;
+    position: relative !important;
+}
+
+}
+
+
+
+.mobile-stationary-slide-center{
+  @include media-breakpoint-down(sm) {
+  background-position: 100% 70% !important;
+  }
+}
+
+
+.gizlilik-politika-container p{
+  margin-bottom: 20px;
+}
+
+
+.position-centering{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
